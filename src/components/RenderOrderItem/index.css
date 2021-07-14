@@ -1,0 +1,71 @@
+.order-item-container {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  justify-content: space-between;
+  padding-right: 30px;
+  margin-bottom: 20px;
+}
+.order-item-img-container {
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+.order-item-image {
+  height: 100px;
+  width: 100px;
+  margin-right: 10px;
+}
+.order-item-name {
+  font-family: 'DM Sans';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: #183b56;
+}
+
+.order-item-buttons-container {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  justify-content: center;
+}
+
+.order-item-button {
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+  color: #475569;
+  height: 20px;
+  width: 20px;
+  border-radius: 6px;
+  padding-left: 6px;
+  padding-right: 12px;
+  box-sizing: border-box;
+}
+.order-item-quantity {
+  font-family: 'DM Sans';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #475569;
+  width: 30%;
+}
+.order-item-price {
+  font-family: 'DM Sans';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #ffa412;
+  width: 30%;
+  text-align: right;
+}

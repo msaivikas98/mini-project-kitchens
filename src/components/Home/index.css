@@ -1,0 +1,15 @@
+.carousel-images-container {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-bg-container {
+  min-height: 100vh;
+}
+
+.restaurants-list-container {
+  width: 80%;
+  margin: auto;
+}

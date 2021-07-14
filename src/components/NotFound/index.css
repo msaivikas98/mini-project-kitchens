@@ -1,0 +1,20 @@
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-page-button {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  border: 0px;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  background-color: #f7931e;
+  height: 30px;
+  width: 100px;
+}
