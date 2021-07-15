@@ -1,4 +1,4 @@
-import {Component} from 'react'
+import React, {Component} from 'react'
 
 import './index.css'
 import RenderOrderItem from '../RenderOrderItem'
@@ -6,8 +6,19 @@ import RenderOrderItem from '../RenderOrderItem'
 import TotalPrice from '../TotalPrice'
 
 class RenderOrders extends Component {
+  constructor(props) {
+    super(props)
+
+    this.child = React.createRef()
+  }
+
   checkingFunctionPassing = (name, totalQuantity, cost) => {
     console.log(totalQuantity * cost)
+  }
+
+  handleClick = () => {
+    // Call the child method foo
+    this.child.current.foo()
   }
 
   checkOrdersInRenderOrder = orderList => {
@@ -39,7 +50,7 @@ class RenderOrders extends Component {
             ))}
           </div>
           <hr />
-          <TotalPrice />
+          <TotalPrice ref={this.child} />
           {this.checkingFunctionPassing()}
         </div>
       </>
@@ -47,7 +58,19 @@ class RenderOrders extends Component {
   }
 
   render() {
-    return <>{this.renderOrders()}</>
+    return (
+      <>
+        {this.renderOrders()}
+
+        <button
+          className="calculate-total-button"
+          type="button"
+          onClick={this.handleClick}
+        >
+          Calculate Total
+        </button>
+      </>
+    )
   }
 }
 export default RenderOrders

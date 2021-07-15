@@ -1,0 +1,6 @@
+.order-details-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+}

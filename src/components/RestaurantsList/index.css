@@ -53,6 +53,10 @@
 
 .pagination-button {
   height: 30px;
+  color: orange;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 @media screen and (max-width: 500px) {

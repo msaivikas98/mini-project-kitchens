@@ -48,7 +48,7 @@
   color: #3e4c59;
 }
 
-.payment-button {
+.calculate-total-button {
   border: 0px;
   outline: none;
   cursor: pointer;
@@ -59,7 +59,7 @@
   background-color: #f7931e;
   color: #ffffff;
   font-family: 'DM Sans';
-  font-size: 12px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 500;
   margin-top: 100px;

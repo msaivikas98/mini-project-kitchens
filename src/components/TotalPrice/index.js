@@ -7,17 +7,23 @@ class TotalPrice extends Component {
     totalPrice: 0,
   }
 
-  changeTotalPrice = price => {
-    this.setState(prevState => ({totalPrice: prevState.totalPrice + price}))
-  }
+  foo = () => {
+    const orderList = JSON.parse(localStorage.getItem('orderList'))
 
-  printHelloWorld = () => {
-    console.log('hello world')
+    const orderListKeys = Object.keys(orderList)
+
+    const totalPriceList = orderListKeys.map(
+      eachId => orderList[eachId].quantity * orderList[eachId].cost,
+    )
+
+    const sum = totalPriceList.reduce((acc, val) => acc + val, 0)
+
+    this.setState({totalPrice: sum})
   }
 
   render() {
-    const totalPrice = localStorage.getItem('totalPrice')
-    console.log(totalPrice)
+    const {totalPrice} = this.state
+
     return (
       <>
         <div className="order-details-footer">

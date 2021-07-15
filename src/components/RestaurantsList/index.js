@@ -101,7 +101,7 @@ class RestaurantsList extends Component {
             type="button"
             onClick={this.onDecrease}
           >
-            b1
+            <span>&#60;</span>
           </button>
           <p>{activePage} of 20</p>
           <button
@@ -109,7 +109,7 @@ class RestaurantsList extends Component {
             type="button"
             onClick={this.onIncrease}
           >
-            b2
+            <span>&#62;</span>
           </button>
         </div>
       </>
