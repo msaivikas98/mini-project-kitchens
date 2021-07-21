@@ -105,3 +105,23 @@
   line-height: 16px;
   color: #ff0b37;
 }
+
+@media screen and (max-width: 600px) {
+  .form-image {
+    display: none;
+  }
+  .form-container {
+    width: 100%;
+    background-image: url('https://i.postimg.cc/9FnQvLZT/login-bg-image.jpg');
+  }
+  .form-card {
+    width: 80%;
+    background-color: #ffffff;
+  }
+  .tasty-kitchens-heading {
+    font-size: 26px;
+  }
+  .text-sign-in {
+    font-size: 20px;
+  }
+}
