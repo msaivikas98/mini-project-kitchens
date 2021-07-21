@@ -1,0 +1,61 @@
+.paynow-bg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.payment-successful-image {
+  height: 80px;
+  width: 80px;
+}
+
+.paynow-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.2);
+  height: 350px;
+  width: 400px;
+}
+.payment-heading {
+  font-family: 'DM Sans';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.payment-description {
+  font-family: 'DM Sans';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.payment-home-page-button {
+  background-color: #f7931e;
+  color: #ffffff;
+  height: 30px;
+  width: 140px;
+  outline: none;
+  cursor: pointer;
+  border: 0px;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 600px) {
+  .paynow-card {
+    height: 350px;
+    width: 300px;
+  }
+  .payment-successful-image {
+    height: 50px;
+    width: 50px;
+  }
+}

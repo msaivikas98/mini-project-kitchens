@@ -145,3 +145,29 @@
   justify-content: center;
   padding-top: 30px;
 }
+
+@media screen and (max-width: 600px) {
+  .food-items-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .restaurant-details-bg-container {
+    margin-top: 100px;
+  }
+  .restaurant-image {
+    height: 100px;
+    width: 100px;
+  }
+  .restaurant-name {
+    font-size: 20px;
+  }
+  .restaurant-cuisine {
+    font-size: 14px;
+  }
+  .restaurant-location {
+    font-size: 12px;
+  }
+  .restaurant-info-container {
+    padding: 20px;
+  }
+}

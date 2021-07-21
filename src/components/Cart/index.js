@@ -55,17 +55,31 @@ class Cart extends Component {
     }
   }
 
+  onClickGoToPaymentRoute = () => {
+    const {history} = this.props
+    history.replace('/payment')
+  }
+
   render() {
     const {showOrders} = this.state
     console.log(`show orders in ${showOrders}`)
     return (
       <>
-        <Header />
         <div className="cart-bg-container">
+          <Header />
           {showOrders === false ? (
             this.renderNoOrders()
           ) : (
-            <RenderOrders checkOrders={this.checkOrders} />
+            <>
+              <RenderOrders checkOrders={this.checkOrders} />
+              <button
+                className="paynow-button"
+                type="button"
+                onClick={this.onClickGoToPaymentRoute}
+              >
+                paynow
+              </button>
+            </>
           )}
         </div>
         <Footer />

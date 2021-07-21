@@ -1,6 +1,8 @@
 .order-details-container {
   background-color: #f9fbfe;
   width: 80%;
+  margin-top: 100px;
+  min-height: 200px;
 }
 .order-details-header {
   display: flex;
@@ -14,7 +16,6 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px;
   letter-spacing: 0.20000000298023224px;
   text-align: right;
   color: #475569;
@@ -24,28 +25,6 @@
   justify-content: space-between;
   padding-left: 30px;
   padding-right: 30px;
-}
-
-.order-total {
-  font-family: 'Roboto';
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 32px;
-  letter-spacing: 0px;
-  text-align: left;
-  color: #3e4c59;
-}
-
-.order-total-price {
-  font-family: 'DM Sans';
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 32px;
-  letter-spacing: 0px;
-  text-align: right;
-  color: #3e4c59;
 }
 
 .calculate-total-button {
@@ -63,4 +42,29 @@
   font-style: normal;
   font-weight: 500;
   margin-top: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  .order-details-header {
+    display: none;
+  }
+  .order-details-container {
+    padding-top: 30px;
+  }
+  .calculate-total-button {
+    border: 0px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 6px;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    background-color: #f7931e;
+    color: #ffffff;
+    font-family: 'DM Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 20px;
+  }
 }

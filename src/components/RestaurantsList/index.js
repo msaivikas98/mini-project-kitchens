@@ -2,6 +2,10 @@ import {Component} from 'react'
 
 import Cookies from 'js-cookie'
 
+import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
+
+import Loader from 'react-loader-spinner'
+
 import Restaurant from '../Restaurant'
 
 import './index.css'
@@ -14,10 +18,12 @@ class RestaurantsList extends Component {
   state = {
     restaurantsList: [],
     showRestaurants: false,
+    isLoading: true,
   }
 
   componentDidMount() {
     this.renderRestaurants()
+    this.setState({isLoading: false})
   }
 
   renderRestaurants = async () => {
@@ -67,7 +73,12 @@ class RestaurantsList extends Component {
   )
 
   render() {
-    const {showRestaurants, restaurantsList} = this.state
+    const {showRestaurants, restaurantsList, isLoading} = this.state
+
+    if (isLoading) {
+      return <Loader type="Tailspin" color="#00BFFF" height={50} width={50} />
+    }
+
     return (
       <>
         <div>

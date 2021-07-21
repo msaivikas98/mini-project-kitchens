@@ -7,6 +7,7 @@ import NotFound from './components/NotFound'
 import ProtectedRoute from './components/ProtectedRoute'
 import RestaurantDetails from './components/RestaurantDetails'
 import Cart from './components/Cart'
+import Paynow from './components/Paynow'
 
 const App = () => (
   <BrowserRouter>
@@ -19,6 +20,7 @@ const App = () => (
         component={RestaurantDetails}
       />
       <ProtectedRoute exact path="/cart" component={Cart} />
+      <ProtectedRoute exact path="/payment" component={Paynow} />
       <Route component={NotFound} />
     </Switch>
   </BrowserRouter>

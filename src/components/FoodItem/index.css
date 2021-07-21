@@ -99,3 +99,11 @@
   padding-right: 12px;
   box-sizing: border-box;
 }
+
+@media screen and (max-width: 600px) {
+  .food-item {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

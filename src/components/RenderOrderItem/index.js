@@ -54,11 +54,12 @@ class RenderOrderItem extends Component {
       <div className="order-item-container">
         <div className="order-item-img-container">
           <img className="order-item-image" src={imageUrl} alt="food" />
-          <h1 className="order-item-name">{name}</h1>
+          <h1 className="order-item-name desktop-heading">{name}</h1>
         </div>
-        <div className="order-item-buttons-container">
+
+        <div className="order-item-desktop-buttons-container">
           <button
-            className="order-item-button"
+            className="order-item-desktop-button"
             onClick={this.quantityDecrease}
             type="button"
           >
@@ -66,12 +67,33 @@ class RenderOrderItem extends Component {
           </button>
           <p className="order-item-quantity">{totalQuantity}</p>
           <button
-            className="order-item-button"
+            className="order-item-desktop-button"
             onClick={this.quantityIncrease}
             type="button"
           >
             +
           </button>
+        </div>
+        <div className="mobile-name-buttons-price-section">
+          <h1 className="order-item-name mobile-heading">{name}</h1>
+          <div className="order-item-mobile-buttons-container">
+            <button
+              className="order-item-mobile-button"
+              onClick={this.quantityDecrease}
+              type="button"
+            >
+              -
+            </button>
+            <p className="order-item-mobile-quantity">{totalQuantity}</p>
+            <button
+              className="order-item-mobile-button"
+              onClick={this.quantityIncrease}
+              type="button"
+            >
+              +
+            </button>
+          </div>
+          <p className="order-item-mobile-price">₹{cost * totalQuantity}</p>
         </div>
         <p className="order-item-price">₹{cost * totalQuantity}</p>
       </div>

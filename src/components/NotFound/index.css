@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .home-page-button {
@@ -17,4 +18,19 @@
   background-color: #f7931e;
   height: 30px;
   width: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  .not-found-container {
+    width: 100%;
+  }
+  .not-found-image {
+    height: 200px;
+    width: 200px;
+  }
+  .not-found-description {
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+  }
 }

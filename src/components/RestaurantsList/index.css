@@ -49,6 +49,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 }
 
 .pagination-button {
@@ -59,8 +60,23 @@
   margin-right: 10px;
 }
 
-@media screen and (max-width: 500px) {
-  .restaurant-list {
+@media screen and (max-width: 600px) {
+  .popular-restaurants-heading {
+    font-size: 26px;
+  }
+  .popular-restaurants-description {
+    font-size: 16px;
+  }
+  .selection-description-container {
     flex-direction: column;
+  }
+  .sort-container {
+    margin-left: auto;
+  }
+  .restaurant-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-y: auto;
   }
 }
