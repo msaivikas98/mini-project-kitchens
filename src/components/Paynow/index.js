@@ -5,7 +5,6 @@ class Paynow extends Component {
   onClickGotoHomePage = () => {
     const {history} = this.props
     history.replace('/')
-    localStorage.setItem('orderList', '[]')
   }
 
   render() {
