@@ -16,6 +16,10 @@ class Cart extends Component {
 
   componentDidMount() {
     const orderList = JSON.parse(localStorage.getItem('orderList'))
+    if (orderList === null) {
+      const emptyOrderList = {}
+      localStorage.setItem('orderList', JSON.stringify(emptyOrderList))
+    }
     const keysList = Object.keys(orderList)
     if (keysList.length === 0) {
       this.setState({showOrders: false})

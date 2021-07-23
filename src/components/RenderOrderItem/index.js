@@ -42,7 +42,6 @@ class RenderOrderItem extends Component {
     const orderList = JSON.parse(localStorage.getItem('orderList'))
     orderList[id] = {id, name, imageUrl, cost, quantity: totalQuantity}
     localStorage.setItem('orderList', JSON.stringify(orderList))
-
     if (totalQuantity === 0 && delQuantity) {
       delete orderList[id]
       localStorage.setItem('orderList', JSON.stringify(orderList))
