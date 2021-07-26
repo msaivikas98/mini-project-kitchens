@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/mini-project-kitchens/static/css/main.69ce385b.chunk.css",
+    "main.js": "/mini-project-kitchens/static/js/main.36be01fa.chunk.js",
+    "main.js.map": "/mini-project-kitchens/static/js/main.36be01fa.chunk.js.map",
+    "runtime-main.js": "/mini-project-kitchens/static/js/runtime-main.03afb3ce.js",
+    "runtime-main.js.map": "/mini-project-kitchens/static/js/runtime-main.03afb3ce.js.map",
+    "static/css/2.7a8f3fa9.chunk.css": "/mini-project-kitchens/static/css/2.7a8f3fa9.chunk.css",
+    "static/js/2.d943b118.chunk.js": "/mini-project-kitchens/static/js/2.d943b118.chunk.js",
+    "static/js/2.d943b118.chunk.js.map": "/mini-project-kitchens/static/js/2.d943b118.chunk.js.map",
+    "index.html": "/mini-project-kitchens/index.html",
+    "static/css/2.7a8f3fa9.chunk.css.map": "/mini-project-kitchens/static/css/2.7a8f3fa9.chunk.css.map",
+    "static/css/main.69ce385b.chunk.css.map": "/mini-project-kitchens/static/css/main.69ce385b.chunk.css.map",
+    "static/js/2.d943b118.chunk.js.LICENSE.txt": "/mini-project-kitchens/static/js/2.d943b118.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.03afb3ce.js",
+    "static/css/2.7a8f3fa9.chunk.css",
+    "static/js/2.d943b118.chunk.js",
+    "static/css/main.69ce385b.chunk.css",
+    "static/js/main.36be01fa.chunk.js"
+  ]
+}
